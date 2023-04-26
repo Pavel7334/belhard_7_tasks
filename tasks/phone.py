@@ -26,10 +26,10 @@ class Phone:
         self.model = model
         self.issue_year = issue_year
 
-    def receive_call(self, name) -> None:
+    def receive_call(self, name: str) -> None:
         print(f'Звонит {name}')
 
-    def get_info(self) -> tuple:
+    def get_info(self,) -> tuple[str, str, int]:
         return self.brand, self.model, self.issue_year
 
     def __str__(self) -> str:
